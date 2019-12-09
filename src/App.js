@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, NavLink, Route, Switch, useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, useHistory } from 'react-router-dom';
 import './App.css';
 import Content from './components/content/content';
 import Filter from './components/filter/filter';
@@ -62,19 +62,23 @@ export default class App extends Component {
               month={this.state.monthAndYear.Month}
               year={this.state.monthAndYear.Year} />
 
-            <div className="search-parent">
+            {/* <div className="search-parent">
               <NavLink to={`/details/${this.state.selectedYear}/${this.state.selectedMonth}`} className="nav-link"> Search </NavLink>
-            </div>
+            </div> */}
           </div>
+          <Content
+            updateRoute={this.updateRoute}
+            selectedMonth={this.state.selectedMonth}
+            selectedYear={this.state.selectedYear} />
           <Switch>
-            <Route 
+            {/* <Route 
               path="/details/:year?/:month?" 
               render={(props) => <Content 
                                     {...props} 
                                     updateRoute={this.updateRoute}
                                     selectedMonth={this.state.selectedMonth}
                                     selectedYear={this.state.selectedYear} />}
-            ></Route>
+            ></Route> */}
             {/* <Route path="/details/:year?/:month?" component={Content}></Route> */}
           </Switch>
         </Router>

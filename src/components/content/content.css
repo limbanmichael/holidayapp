@@ -2,12 +2,12 @@
     display: flex;
     /* justify-content: flex-end; */
     flex-direction: column;
-    width: 64%;
+    width: 100%;
     padding-top: 40px;
 }
 
 .contentParent .holiday-card {
-    align-self: flex-end;
+    align-self: center;
     width: 650px;
     outline-color: white;
     outline: none;
@@ -49,6 +49,11 @@
     text-align: left;
     font-size: 30px;
     padding-left: 30px;
+
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .name-type .type {
