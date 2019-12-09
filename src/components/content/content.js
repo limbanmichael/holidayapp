@@ -27,8 +27,14 @@ export default class Content extends Component {
     
 
     render() {
-        const selHoliday = holiday[this.props.selectedYear];
-        console.log(this.props, ' from render');
+        let selHoliday;
+        if (this.props.selectedMonth.toLowerCase() === 'all') {
+            console.log(this.props, ' from render');
+            selHoliday = holiday[this.props.selectedYear];
+        } else {
+            selHoliday = holiday[this.props.selectedYear].filter(h => this.props.selectedMonth === h.month);
+            console.log(selHoliday, ' from render 2');
+        }
 
         return (
             <div className="contentParent">
