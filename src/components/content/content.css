@@ -1,0 +1,56 @@
+.contentParent {
+    display: flex;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    width: 64%;
+    padding-top: 40px;
+}
+
+.contentParent .holiday-card {
+    align-self: flex-end;
+    width: 650px;
+    outline-color: white;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    height: 85px;
+    margin-top: 20px;
+    /* box-shadow: 0px 0px 0px -1px rgba(0,0,0,0.2), 0px 0px 5px 0px rgba(0,0,0,0.14), 0px 0px 5px 0px rgba(0,0,0,0.12); */
+}
+
+.holiday-card .date{
+    /* font-size: 30px; */
+    width: 30%;
+    text-align: center;
+    padding-top: 11px;
+    background-color: #fb8b55;
+    border-radius: 25px;
+    color: #fff;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.date p {
+    margin: 0;
+}
+
+.date .date-text {
+    font-size: 30px;
+}
+
+.holiday-card .name-type {
+    width: 70%;
+    padding-top: 5px;
+}
+
+.name-type div {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.name-type .type {
+    font-size: 16px;
+}

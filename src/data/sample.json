@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "month": "January",
+            "date": "1",
+            "day": "Wednesday",
+            "name": "New Year's Day",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "February",
+            "date": "5",
+            "day": "Tuesday",
+            "name": "Chinese Lunar New Year's Day",
+            "type": "Special Non-working Holiday"
+        },
+        {
+            "month": "February",
+            "date": "25",
+            "day": "Monday",
+            "name": "People Power Anniversary",
+            "type": "Special Non-working Holiday"
+        },
+        {
+            "month": "March",
+            "date": "21",
+            "day": "Thursday",
+            "name": "March Equinox",
+            "type": "Season"
+        },
+        {
+            "month": "April",
+            "date": "3",
+            "day": "Wednesday",
+            "name": "Lailatul Isra Wal Mi Raj",
+            "type": "Common local holiday"
+        },
+        {
+            "month": "April",
+            "date": "9",
+            "day": "Tuesday",
+            "name": "The Day of Valor",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "April",
+            "date": "18",
+            "day": "Thursday",
+            "name": "Maundy Thursday",
+            "type": "Regular Holiday"
+        }
+    ]
+}
