@@ -7,6 +7,7 @@
 }
 
 .contentParent .holiday-card {
+    cursor: pointer;
     align-self: center;
     width: 650px;
     outline-color: white;
@@ -18,6 +19,49 @@
     height: 85px;
     margin-top: 20px;
     /* box-shadow: 0px 0px 0px -1px rgba(0,0,0,0.2), 0px 0px 5px 0px rgba(0,0,0,0.14), 0px 0px 5px 0px rgba(0,0,0,0.12); */
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+
+    /* position: relative;
+    -webkit-animation: myfirst 5s infinite;
+    -webkit-animation-direction: alternate;
+    animation: myfirst 5s;
+    animation-direction: alternate; */
+}
+
+/* @-webkit-keyframes myfirst {
+    0%   {left: -1500px; top: 0px;}
+    25%  {left: 0px; top: 0px;}
+    50%  {left: 0px; top: 0;}
+    75%  {left: 0px; top: 0;}
+    100% {left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {left: -1500px; top: 0px;}
+    25%  {left: 0px; top: 0px;}
+    50%  {left: 0px; top: 0;}
+    75%  {left: 0px; top: 0;}
+    100% {left: 0px; top: 0px;}
+} */
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+@-webkit-keyframes fadeInAnimation {
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
 }
 
 .holiday-card .date{
