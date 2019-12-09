@@ -13,12 +13,11 @@ export default class Content extends Component {
     }
 
     componentDidMount() {
-        const selHoliday = holiday;
-        const year = this.props.match.params.year;
-        this.setState({ selectedHolidayYear: selHoliday[year] }, () => {
-            // console.log('componentDidMount');
-        });
-        // this.props.updateRoute();
+        // const selHoliday = holiday;
+        // const year = this.props.match.params.year;
+        // this.setState({ selectedHolidayYear: selHoliday[year] }, () => {
+        //     console.log('componentDidMount');
+        // });
     }
 
     componentDidUpdate(prevProps) {
