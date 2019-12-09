@@ -6,6 +6,10 @@
     padding-top: 40px;
 }
 
+.contentParent .holiday-card:hover {
+    border: 1px solid #fb8b57;
+}
+
 .contentParent .holiday-card {
     cursor: pointer;
     align-self: center;
