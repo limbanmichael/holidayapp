@@ -30,12 +30,14 @@ export default class Content extends Component {
 
     render() {
         let selHoliday;
-        if (this.props.selectedMonth.toLowerCase() === 'all') {
+        const propMonths = this.props.selectedMonth.toLowerCase();
+        if (propMonths === 'all' || propMonths === '0') {
+            console.log(this.props, ' from content 1');
             selHoliday = holiday[this.props.selectedYear];
         } else {
+            console.log(this.props, ' from content 2');
             selHoliday = holiday[this.props.selectedYear].filter(h => this.props.selectedMonth === h.month);
         }
-        console.log(days);
 
         return (
             <div className="contentParent">
