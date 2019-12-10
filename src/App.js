@@ -35,7 +35,7 @@ export default class App extends Component {
 
   setYear = (e) => {
     this.setState({ selectedYear: e.target.value }, () => {
-      console.log(this.state, ' set year');
+      console.log(e, ' set year');
     });
   }
 
