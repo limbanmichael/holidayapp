@@ -485,5 +485,223 @@ export default {
             "name": "New Year's Eve",
             "type": "Special Non-working Holiday"
         },
+    ],
+    "2021": [
+        {
+            "month": "January",
+            "date": "1",
+            "day": "Friday",
+            "name": "New Year's Day",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "February",
+            "date": "12",
+            "day": "Friday",
+            "name": "Chinese Lunar New Year's Day",
+            "type": "Special Non-working Holiday"
+        },
+        {
+            "month": "February",
+            "date": "25",
+            "day": "Thursday",
+            "name": "People Power Anniversary",
+            "type": "Special Non-working Holiday"
+        },
+        {
+            "month": "March",
+            "date": "11",
+            "day": "Thursday",
+            "name": "Lailatul Isra Wal Mi Raj",
+            "type": "Common local holiday"
+        },
+        {
+            "month": "March",
+            "date": "20",
+            "day": "Saturday",
+            "name": "March Equinox",
+            "type": "Season"
+        },
+        {
+            "month": "April",
+            "date": "1",
+            "day": "Thursday",
+            "name": "Maundy Thursday",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "April",
+            "date": "2",
+            "day": "Friday",
+            "name": "Good Friday",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "April",
+            "date": "4",
+            "day": "Sunday",
+            "name": "Easter Sunday",
+            "type": "Observance"
+        },
+        {
+            "month": "April",
+            "date": "9",
+            "day": "Friday",
+            "name": "The Day of Valor",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "May",
+            "date": "1",
+            "day": "Saturday",
+            "name": "Labor Day",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "May",
+            "date": "13",
+            "day": "Thursday",
+            "name": "Eidul-Fitar",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "June",
+            "date": "12",
+            "day": "Saturday",
+            "name": "Independence Day",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "June",
+            "date": "21",
+            "day": "Monday",
+            "name": "June Solstice",
+            "type": "Season"
+        },
+        {
+            "month": "July",
+            "date": "20",
+            "day": "Tuesday",
+            "name": "Eid al-Adha (Feast of the Sacrifice)",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "July",
+            "date": "21",
+            "day": "Wednesday",
+            "name": "Eid al-Adha Day 2",
+            "type": "Common local holiday"
+        },
+        {
+            "month": "August",
+            "date": "10",
+            "day": "Tuesday",
+            "name": "Amun Jadid",
+            "type": "Muslim, Common local holiday"
+        },
+        {
+            "month": "August",
+            "date": "21",
+            "day": "Saturday",
+            "name": "Ninoy Aquino Day",
+            "type": "Special Non-working Holiday"
+        },
+        {
+            "month": "August",
+            "date": "30",
+            "day": "Monday",
+            "name": "National Heroes Day",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "September",
+            "date": "3",
+            "day": "Friday",
+            "name": "Yamashita Surrender Day",
+            "type": "Special Working Public Holiday"
+        },
+        {
+            "month": "September",
+            "date": "8",
+            "day": "Wednesday",
+            "name": "Feast of the Nativity of Mary",
+            "type": "Special Working Public Holiday"
+        },
+        {
+            "month": "September",
+            "date": "23",
+            "day": "Thursday",
+            "name": "September Equinox",
+            "type": "Season"
+        },
+        {
+            "month": "October",
+            "date": "19",
+            "day": "Tuesday",
+            "name": "Maulid un-Nabi",
+            "type": "Common local holiday"
+        },
+        {
+            "month": "November",
+            "date": "1",
+            "day": "Monday",
+            "name": "All Saints' Day",
+            "type": "Special Non-working Holiday"
+        },
+        {
+            "month": "November",
+            "date": "2",
+            "day": "Tuesday",
+            "name": "All Souls' Day",
+            "type": "Observance"
+        },
+        {
+            "month": "November",
+            "date": "30",
+            "day": "Tuesday",
+            "name": "Bonifacio Day",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "December",
+            "date": "8",
+            "day": "Wednesday",
+            "name": "Feast of the Immaculate Conception",
+            "type": "Special Non-working Holiday"
+        },
+        {
+            "month": "December",
+            "date": "21",
+            "day": "Tuesday",
+            "name": "December Solstice",
+            "type": "Season"
+        },
+        {
+            "month": "December",
+            "date": "24",
+            "day": "Friday",
+            "name": "Christmas Eve",
+            "type": "Observance"
+        },
+        {
+            "month": "December",
+            "date": "25",
+            "day": "Saturday",
+            "name": "Christmas Day",
+            "type": "Regular Holiday"
+        },
+        {
+            "month": "December",
+            "date": "30",
+            "day": "Thursday",
+            "name": "Rizal Day",
+            "type": "Regular Holiday"
+        }, {
+            "month": "December",
+            "date": "31",
+            "day": "Friday",
+            "name": "New Year's Eve",
+            "type": "Special Non-working Holiday"
+        }
     ]
 }

@@ -73,7 +73,8 @@
     width: 30%;
     text-align: center;
     padding-top: 11px;
-    background-color: #fb8b55;
+    /* background-color: #fb8b55; */
+    background: linear-gradient(105deg, #fb8b57 89%, white 1%);
     border-radius: 25px;
     color: #fff;
     border-bottom-right-radius: 0px;
