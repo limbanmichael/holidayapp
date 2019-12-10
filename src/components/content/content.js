@@ -44,14 +44,18 @@ export default class Content extends Component {
                 {selHoliday ?
                     selHoliday.map((h) =>
                         <div className="holiday-card" key={h.name + h.month}>
-                            <div className="date">
-                                <p className="date-text">{months[h.month] + ' ' + h.date}</p>
-                                <p className="day-text">{days[h.day]}</p>
-                            </div>
-                            <div className="name-type">
-                                <div className="name">{h.name}</div>
-                                <div className="type">{h.type}</div>
-                            </div>
+                            {!h.showDetails?
+                                <div className="date">
+                                    <p className="date-text">{months[h.month] + ' ' + h.date}</p>
+                                    <p className="day-text">{days[h.day]}</p>
+                                </div>
+                            : ''}
+                            {!h.showDetails ?
+                                <div className="name-type">
+                                    <div className="name">{h.name}</div>
+                                    <div className="type">{h.type}</div>
+                                </div>
+                            : ''}
                         </div>
                     ) : ''}
             </div>
