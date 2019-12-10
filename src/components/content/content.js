@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './content.css';
 import holiday from '../../data/holiday';
+import days from '../../data/day';
 
 export default class Content extends Component {
     constructor(props) {
@@ -29,12 +30,11 @@ export default class Content extends Component {
     render() {
         let selHoliday;
         if (this.props.selectedMonth.toLowerCase() === 'all') {
-            console.log(this.props, ' from render');
             selHoliday = holiday[this.props.selectedYear];
         } else {
             selHoliday = holiday[this.props.selectedYear].filter(h => this.props.selectedMonth === h.month);
-            console.log(selHoliday, ' from render 2');
         }
+        console.log(days);
 
         return (
             <div className="contentParent">
@@ -43,7 +43,7 @@ export default class Content extends Component {
                         <div className="holiday-card" key={h.name + h.month}>
                             <div className="date">
                                 <p className="date-text">{h.month + ' ' + h.date}</p>
-                                <p className="day-text">{h.day}</p>
+                                <p className="day-text">{days[h.day]}</p>
                             </div>
                             <div className="name-type">
                                 <div className="name">{h.name}</div>
