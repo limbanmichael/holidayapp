@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './content.css';
 import holiday from '../../data/holiday';
 import days from '../../data/day';
+import months from '../../data/months';
 
 export default class Content extends Component {
     constructor(props) {
@@ -42,7 +43,7 @@ export default class Content extends Component {
                     selHoliday.map((h) =>
                         <div className="holiday-card" key={h.name + h.month}>
                             <div className="date">
-                                <p className="date-text">{h.month + ' ' + h.date}</p>
+                                <p className="date-text">{months[h.month] + ' ' + h.date}</p>
                                 <p className="day-text">{days[h.day]}</p>
                             </div>
                             <div className="name-type">
