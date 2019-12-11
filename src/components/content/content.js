@@ -12,6 +12,7 @@ export default class Content extends Component {
             selectedHolidayYear: ''
         };
         this.selectedHolidayYear = null;
+        this.holidaySel = null;
     }
 
     componentDidMount() {
@@ -27,23 +28,39 @@ export default class Content extends Component {
         this.selectedHolidayYear = this.props.selectedYear;
     }
     
+    toggleCard = id => {
+        this.setState({triggerRender: !this.state.triggerRender})
+        this.holidaySel.map(h => {
+            if (h.id === id) {
+                h.showDetails = !h.showDetails
+                console.log(h);
+                console.log(this.state);
+            }
+            return h;
+        });
+    };
+    
 
     render() {
         let selHoliday;
         const propMonths = this.props.selectedMonth.toLowerCase();
         if (propMonths === 'all' || propMonths === '0') {
-            console.log(this.props, ' from content 1');
             selHoliday = holiday[this.props.selectedYear];
+            this.holidaySel = selHoliday;
         } else {
-            console.log(this.props, ' from content 2');
             selHoliday = holiday[this.props.selectedYear].filter(h => this.props.selectedMonth === h.month);
+            this.holidaySel = selHoliday;
         }
 
         return (
             <div className="contentParent">
-                {selHoliday ?
-                    selHoliday.map((h) =>
-                        <div className="holiday-card" key={h.name + h.month}>
+                {this.holidaySel ?
+                    this.holidaySel.map((h) =>
+                        <div 
+                            className="holiday-card" 
+                            key={h.name + h.month}
+                            onClick={(e) => this.toggleCard(h.id)}
+                        >
                             {!h.showDetails?
                                 <div className="date">
                                     <p className="date-text">{months[h.month] + ' ' + h.date}</p>
